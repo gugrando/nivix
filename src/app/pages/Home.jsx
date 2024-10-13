@@ -1,12 +1,8 @@
-function Home() {
+function Home (){
     return (
-        <>
-            <h1>TESTE</h1>
-            <h1>TESTE</h1>
-            <h1>TESTE</h1>
-            <h1>TESTE</h1>
-            <h1>TESTE</h1>
-        </>
+        <div>
+            <h1 className="text-white text-9xl w-full text-center">Hello World</h1>
+        </div>
     )
 }
 
