@@ -1,7 +1,10 @@
+import Button from 'src/app/Utils/Button.jsx'
+
 function Home() {
     return (
         <div>
-            <h1>Home</h1>
+          <Button text='Nivix' />
+          <Button text='Nivix2' />
         </div>
     )
 }
