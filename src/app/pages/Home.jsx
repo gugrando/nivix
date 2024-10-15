@@ -1,7 +1,77 @@
+import { motion } from "framer-motion"
+import { div, h1 } from "framer-motion/client"
 function Home (){
     return (
-        <div>
-            <h1 className="text-white text-9xl w-full text-center">Hello World</h1>
+        <div className="w-full h-screen">
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
+            <p className="block">Block</p>
         </div>
     )
 }

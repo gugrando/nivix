@@ -1,11 +1,16 @@
+/* eslint-disable react/prop-types */
 // eslint-disable-next-line react/prop-types
+import { motion } from "framer-motion"
 function Button(props) {
     return (
-        <button className="bg-blue-600 w-16 h-8 text-white">
-            <p>
-                {props.text}
-            </p>
-        </button>
+        <motion.button 
+            whileTap={props.whileTap} 
+            whileHover={props.whileHover} 
+            initial={props.initial} 
+            animate={props.animate} 
+            className={props.className}>
+            {props.text} 
+        </motion.button>
     )
 }
 export default Button
