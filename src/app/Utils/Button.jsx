@@ -7,6 +7,7 @@ function Button(props) {
             whileTap={props.whileTap} 
             whileHover={props.whileHover} 
             initial={props.initial} 
+            transition={props.transition}
             animate={props.animate} 
             className={props.className}>
             {props.text} 

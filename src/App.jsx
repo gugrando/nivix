@@ -6,8 +6,8 @@ import Header from './app/pages/sections/Header.jsx'
 
 function App() {
   return (
-    <>
-      <Header />
+    <> 
+      <Header />  
       <Router> 
         <Routes>
           <Route exact path='/' element={<Home />}></Route>
@@ -18,5 +18,3 @@ function App() {
 }
 
 export default App
-
-

@@ -6,9 +6,17 @@
     box-sizing: border-box;
     scrollbar-width: thin;
     scrollbar-color: #3b82f6;
+    /* cursor: none; */
+    /* background-color: black; */
+    cursor: url(./assets/icons8-ponteiro-azul-24.png), auto ;
 }
 
+a,  button:hover{
+    cursor: url(./assets/icons8-hand-cursor-30.png), pointer ;
+}
 
-body {
-    background-color: black;
+body{
+    background: url(./assets/colorkit.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
