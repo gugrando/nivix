@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 * {
+    font-family: 'Inter', sans-serif;
     box-sizing: border-box;
     scrollbar-width: thin;
     scrollbar-color: #3b82f6;
@@ -16,7 +17,13 @@ a,  button:hover{
 }
 
 body{
-    background: url(./assets/colorkit.png);
+    background: linear-gradient(110deg, #101010 0%, #5900ff 100%);
+    /* background-color: black; */
     background-repeat: no-repeat;
     background-size: cover;
+    /* height: 100vh; */
+}
+
+main{
+    height: fit-content;
 }
