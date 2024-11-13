@@ -2,9 +2,9 @@ import { animate, motion, useScroll, useTransform} from "framer-motion"
 
 const Case = ({logo}) => {
     return (
-        <motion.div className="flex flex-col p-10 bg-white/5 border border-white/5 shadow-md shadow-white/30  backdrop-blur-lg w-[150vw] h-[680px] md:w-[90vw] md:h-[780px] rounded-3xl">
-            <motion.div className="flex items-center justify-center gap-8 w-full h-[6rem]  bg-black border border-white/5 shadow-lg shadow-black rounded-lg backdrop-blur-lg">
-                <motion.img src={logo} alt="" className="w-[15rem] h-full ml-4" />
+        <motion.div className="flex flex-col p-10  border border-white/5 shadow-md shadow-white/30  backdrop-blur-lg w-[150vw] h-[680px] md:w-[90vw] md:h-[780px] rounded-3xl">
+            <motion.div className="flex items-center justify-start gap-8 w-full h-[6rem]  border-white/5 shadow-lg shadow-black rounded-lg backdrop-blur-lg">
+                <motion.img src={logo} alt="" className="bg-black w-[15rem] h-full ml-4" />
                 <motion.div className="w-full h-full  bg-black border border-white/5 shadow-lg shadow-black rounded-lg backdrop-blur-lg">
                     ASSETS{/* Branding, UI/UX, Frontend... */}
                 </motion.div>  

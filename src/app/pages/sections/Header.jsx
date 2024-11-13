@@ -5,6 +5,7 @@ import { useState } from "react";
 import LiMenu from "../../Utils/LiMenu";
 import Logo from "../../Utils/Logo";
 import GetScroll from "../../Utils/GetScroll";
+import { Link } from "react-router-dom";
 
 function Header(){                
     const [open, setOpen] = useState(false)
@@ -14,7 +15,7 @@ function Header(){
 
     return (
         <>
-            <header className={`z-50 sticky transition ease duration-700 delay-200 ${scrollPosition > 90 || open ? 'bg-violet-950 border-b border-b-zinc-700' : 'bg-transparent border-b-transparent'}  top-0 w-full h-20 p-6 flex flex-row justify-between lg:justify-around items-center`}>
+            <header className={`z-50 sticky transition ease duration-700 delay-200 ${scrollPosition > 90 || open ? 'bg-primarySd border-b border-b-gray-700' : 'bg-transparent border-b-transparent'}  top-0 w-full h-20 p-6 flex flex-row justify-between lg:justify-around items-center`}>
                 <Logo />
                 {!open && 
                     <motion.nav className="mt-0 lg:mt-0 w-full lg:w-fit">

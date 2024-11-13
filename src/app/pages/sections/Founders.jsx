@@ -10,19 +10,10 @@ const Founders = () => {
                     Conheça nossos líderes
                 </motion.h1>
             </motion.div>
-            <motion.section className="flex flex-wrap gap-8 items-center justify-center w-full h-fit bg-red-900">
-                {/* <motion.div className="w-[28rem] h-[32rem] bg-blue-400">
-                    
-                </motion.div>
-                <motion.div className="w-[28rem] h-[32rem] bg-blue-400">
-                    
-                </motion.div>
-                <motion.div className="w-[28rem] h-[32rem] bg-blue-400">
-                    
-                </motion.div> */}
-                <TiltCard/>
-                <TiltCard/>
-                <TiltCard/>
+            <motion.section className="flex flex-wrap gap-8 items-center justify-center w-full h-fit bg-black">
+                {/* <TiltCard founderText={"Co-Founder & CTO"} founderName={"Gustavo Grando"}/> */}
+                <TiltCard founderText={"Co-Founder & Chefe de Branding"} founderName={"Danilo Felizardo"} founderImg={"src/assets/danilo.jpeg"}/>
+                {/* <TiltCard founderText={"Co-Founder & Gestor de Tráfego"} founderName={"Everthy Bonfim"}/> */}
             </motion.section>
         </> 
     );

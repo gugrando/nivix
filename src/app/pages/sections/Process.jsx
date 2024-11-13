@@ -3,6 +3,11 @@
 import { animate, motion, useScroll, useTransform} from "framer-motion"
 import { useRef } from "react"
 import AnimatedCounter from "../../Utils/AnimatedCounter"
+import { FcBullish } from "react-icons/fc";
+import { FcCommandLine } from "react-icons/fc";
+import { FcSerialTasks } from "react-icons/fc";
+import { FcCurrencyExchange } from "react-icons/fc";
+
 
 
 function Process() {
@@ -43,39 +48,47 @@ function Process() {
                 <motion.div className="flex flex-col items-end w-11/12 h-full bg-black">
                     {/* 1st BOX */}
                     <motion.div className="pl-6 gap-6 md:pl-0 flex flex-col items-start w-11/12 h-fit ">
-                        <motion.h1 whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -20 }} className="pr-2 md:pr-0 text-white text-start max-w-[100%] lg:max-w-[60%] font-semibold text-4xl md:text-5xl mt-[10.4rem]">Lorem ipsum dolor sit amet consectetur</motion.h1>
-                        <motion.p whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -20 }} className="text-gray-500 text-start max-w-[100%] lg:max-w-[40%] font-normal text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis est natus fugit enim veniam illum reprehenderit vero, cum odio recusandae?</motion.p>
+                        <motion.h1 whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -20 }} className="pr-2 md:pr-0 text-white text-start max-w-[100%] lg:max-w-[60%] font-semibold text-4xl md:text-5xl mt-[10.4rem]">Estratégia personalizada e acompanhada de perto.</motion.h1>
+                        <motion.p whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -20 }} className="text-gray-500 text-start max-w-[100%] lg:max-w-[40%] font-normal text-lg">Trabalhamos do início ao fim ao seu lado, com uma estratégia personalizada especialmente para seu negócio para superar suas metas e principalmente os desafios no meio do caminho, <b>JUNTOS</b>.</motion.p>
                         <motion.div  className="flex flex-wrap justify-start gap-6 w-full h-fit ">
-                            <motion.span whileInView={{ opacity: 1, y: 0}} initial={{ opacity: 0, y: 20 }} className="w-[4rem] h-[4rem] bg-gray-600 rounded-lg"></motion.span>
-                            <motion.span whileInView={{ opacity: 1, y: 0}} initial={{ opacity: 0, y: 20 }} className="w-[4rem] h-[4rem] bg-gray-600 rounded-lg"></motion.span>
-                            <motion.span whileInView={{ opacity: 1, y: 0}} initial={{ opacity: 0, y: 20 }} className="w-[4rem] h-[4rem] bg-gray-600 rounded-lg"></motion.span>
-                            <motion.span whileInView={{ opacity: 1, y: 0}} initial={{ opacity: 0, y: 20 }} className="w-[4rem] h-[4rem] bg-gray-600 rounded-lg"></motion.span>
+                            <motion.span whileInView={{ opacity: 1, y: 0}} initial={{ opacity: 0, y: 20 }} className="w-[4rem] h-[4rem] rounded-lg">
+                                <FcBullish className="w-full h-full text-white" />
+                            </motion.span>
+                            <motion.span whileInView={{ opacity: 1, y: 0}} initial={{ opacity: 0, y: 20 }} className="w-[4rem] h-[4rem] rounded-lg">
+                                <FcCommandLine className="w-full h-full text-white" />
+                            </motion.span>
+                            <motion.span whileInView={{ opacity: 1, y: 0}} initial={{ opacity: 0, y: 20 }} className="w-[4rem] h-[4rem] rounded-lg">
+                                <FcSerialTasks className="w-full h-full text-white" />
+                            </motion.span>
+                            <motion.span whileInView={{ opacity: 1, y: 0}} initial={{ opacity: 0, y: 20 }} className="w-[4rem] h-[4rem] rounded-lg">
+                                <FcCurrencyExchange className="w-full h-full text-white" />
+                            </motion.span>
                         </motion.div>
                     </motion.div>
 
                     <motion.div whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -20 }} className="mt-6 md:mt-[12rem] w-11/12 h-fit flex flex-col md:flex-row justify-start ">
                         <motion.div className="border-b md:border-b-0 md:border-r border-gray-600 gap-3 flex flex-col items-center justify-center md:justify-start w-[18rem] h-[13rem]">
                             <div className="flex items-center">
-                                <AnimatedCounter classes={'text-5xl text-white font-bold'} from={0} to={88} animationOps={{duration: 1.5, ease: "ease"}} />
+                                <AnimatedCounter classes={'text-5xl text-white font-bold'} from={0} to={52} animationOps={{duration: 1.5, ease: "ease"}} />
                                 <span className="text-5xl text-white font-bold">%</span>
                             </div>
-                            <p className="text-gray-500 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, minima!</p>
+                            <p className="text-gray-500 text-center max-w-[14rem]">No aumento de captação e conversão de Leads para nossos parceiros.</p>
                         </motion.div>
 
                         <motion.div className="border-b md:border-b-0 md:border-r border-gray-600 gap-3 flex flex-col items-center justify-center md:justify-start w-[18rem] h-[13rem]">
                             <div className="flex items-center">
-                                <AnimatedCounter classes={'text-5xl text-white font-bold'} from={0} to={48} animationOps={{duration: 1.5, ease: "ease"}} />
+                                <AnimatedCounter classes={'text-5xl text-white font-bold'} from={0} to={67} animationOps={{duration: 1.5, ease: "ease"}} />
                                 <span className="text-5xl text-white font-bold">%</span>
                             </div>
-                            <p className="text-gray-500 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, minima!</p>
+                            <p className="text-gray-500 text-center max-w-[14rem]">No aumento de produtividade e eficiência dos times do negócio de nossos parceiros.</p>
                         </motion.div>
 
                         <motion.div className="border-b md:border-b-0 md:border-r border-gray-600 gap-3 flex flex-col items-center justify-center md:justify-start  w-[18rem] h-[13rem]">
                             <div className="flex items-center">
-                                <AnimatedCounter classes={'text-5xl text-white font-bold'} from={0} to={74} animationOps={{duration: 1.5, ease: "ease"}} />
+                                <AnimatedCounter classes={'text-5xl text-white font-bold'} from={0} to={174} animationOps={{duration: 1.5, ease: "ease"}} />
                                 <span className="text-5xl text-white font-bold">%</span>
                             </div>
-                            <p className="text-gray-500 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, minima!</p>
+                            <p className="text-gray-500 text-center max-w-[14rem]">Aumento do engajamento das redes sociais e base de publico.</p>
                         </motion.div>
                     </motion.div>
 
@@ -97,7 +110,7 @@ function Process() {
                                     Tecnologia
                                 </motion.h1>
                                 <motion.p whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -20 }} className="pl-8 mt-2 text-gray-500">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni molestiae fugiat dignissimos voluptate.
+                                    Modernize o seu negócio com tecnologia de ponta, aumente a eficiencia da sua equipe, e conecte todas pontas do seu processo até o cliente.
                                 </motion.p>
                             </motion.div>
                             <motion.div whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -20 }} className="w-[19rem] h-[15rem] md:w-[24rem] md:h-[19rem] rounded-3xl border bg-neutral-950 border-gray-900">
@@ -109,7 +122,7 @@ function Process() {
                                     Estratégia
                                 </motion.h1>
                                 <motion.p whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -20 }} className="pl-8 mt-2 text-gray-500">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni molestiae fugiat dignissimos voluptate.
+                                    Estratégias de verdade, sem papo furado, estrutura de valores, e um plano de crescimento real para o seu negócio.
                                 </motion.p>
                             </motion.div>
                             <motion.div whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -20 }} className="w-[19rem] h-[15rem] md:w-[24rem] md:h-[19rem] rounded-3xl border bg-neutral-950 border-gray-900">
@@ -121,7 +134,7 @@ function Process() {
                                     Design
                                 </motion.h1>
                                 <motion.p whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -20 }} className="pl-8 mt-2 text-gray-500">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni molestiae fugiat dignissimos voluptate.
+                                    Alinhe todo seu negócio e processo com o que você quer transmitir, através do Design você vai se conectar com o seu publico.
                                 </motion.p>
                             </motion.div>
                             
