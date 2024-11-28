@@ -1,6 +1,6 @@
 
 
-import { animate, motion, useScroll, useTransform} from "framer-motion"
+import { motion, useScroll, useTransform} from "framer-motion"
 import { useRef } from "react"
 import AnimatedCounter from "../../Utils/AnimatedCounter"
 import { FcBullish } from "react-icons/fc";
@@ -16,16 +16,13 @@ function Process() {
         target: lineRef,
         offset: ["start end", "end end"]
     })
-    const value = useTransform(scrollYProgress, (pos)=>{
-        console.log(pos)
-        return pos
-    })
+    
     const height = useTransform(scrollYProgress, (pos)=>{
         const windowidth = window.innerWidth
         if(windowidth > 780){
-            return pos * 1400
+            return pos * 1200
         }else{
-            return pos * 2330
+            return pos * 2150
         }
     })
 
@@ -33,19 +30,19 @@ function Process() {
     
     return (
         <>
-            <motion.section ref={lineRef} className="flex justify-center relative bg-black w-full h-fit">
+            <motion.section ref={lineRef} className="flex justify-center relative bg-[#000B14] w-full h-fit">
                 {/* LINE */}
-                <motion.div style={{height: height}} className="relative flex justify-center ml-[3rem] lg:ml-[25rem] left-0 w-[6px] bg-gray-700">
-                    <motion.div whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -20 }} className="border-black border-8 absolute w-[3.7rem] h-[3.7rem] mt-[10rem] bg-blue-700 rounded-full"></motion.div>
+                <motion.div style={{height: height}} className="mt-44 relative flex justify-center ml-[3rem] lg:ml-[25rem] left-0 w-[6px] bg-gray-700">
+                    <motion.div whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -20 }} className="border-black border-8 absolute w-[3.7rem] h-[3.7rem] mt-[0rem] bg-blue-700 rounded-full"></motion.div>
                     <motion.div whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -20 }} className="border-black border-8 absolute w-[3.7rem] h-[3.7rem] mt-[42rem] bg-red-700 rounded-full">
-                        <motion.img whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -20 }} src="src/assets/rocket.png" alt="" />
+                        {/* <motion.img whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -20 }} src="src/assets/rocket.png" alt="icone de um foguete" /> */}
                     </motion.div>
-                    <motion.div whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -20 }} className="border-black border-8 absolute w-[3.7rem] h-[3.7rem] mt-[84rem] bg-green-700 rounded-full"></motion.div>
+                    <motion.div whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -20 }} className="border-black border-8 absolute w-[3.7rem] h-[3.7rem] mt-[71.4rem] bg-green-700 rounded-full"></motion.div>
 
                 </motion.div>
 
                 {/* Main BOX */}
-                <motion.div className="flex flex-col items-end w-11/12 h-full bg-black">
+                <motion.div className="flex flex-col items-end w-11/12 h-full bg-[#000B14]">
                     {/* 1st BOX */}
                     <motion.div className="pl-6 gap-6 md:pl-0 flex flex-col items-start w-11/12 h-fit ">
                         <motion.h1 whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -20 }} className="pr-2 md:pr-0 text-white text-start max-w-[100%] lg:max-w-[60%] font-semibold text-4xl md:text-5xl mt-[10.4rem]">Estratégia personalizada e acompanhada de perto.</motion.h1>
@@ -103,7 +100,7 @@ function Process() {
                         <motion.div className="w-11/12 h-fit flex gap-8 flex-wrap justify-start mt-9">
                             <motion.div whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -20 }} className="w-[19rem] h-[15rem] md:w-[24rem] md:h-[19rem] rounded-3xl border bg-neutral-950 border-gray-900">
                                 <motion.div className="border-l-4 border-blue-600 mt-4 md:mt-8 w-full h-[4rem]">
-                                    <motion.img whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -20 }} src="src/assets/rocket.png" className="ml-8 w-[4rem] h-[4rem]"/>
+                                    <motion.img whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -20 }} src="/rocket.png" alt="icone de um foguete" className="ml-8 w-[4rem] h-[4rem]"/>
                                 </motion.div>
                                 
                                 <motion.h1 whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -20 }} className="pl-8 mt-2 md:mt-14 text-start text-blue-600 font-extrabold text-3xl">
@@ -115,7 +112,7 @@ function Process() {
                             </motion.div>
                             <motion.div whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -20 }} className="w-[19rem] h-[15rem] md:w-[24rem] md:h-[19rem] rounded-3xl border bg-neutral-950 border-gray-900">
                                 <motion.div className="border-l-4 border-blue-600 mt-4 md:mt-8 w-full h-[4rem]">
-                                    <motion.img whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -20 }} src="src/assets/rocket.png" className="ml-8 w-[4rem] h-[4rem]"/>
+                                    <motion.img whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -20 }} src="/rocket.png" alt="icone de um foguete" className="ml-8 w-[4rem] h-[4rem]"/>
                                 </motion.div>
                                 
                                 <motion.h1 whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -20 }} className="pl-8 mt-2 md:mt-14 text-start text-blue-600 font-extrabold text-3xl">
@@ -127,7 +124,7 @@ function Process() {
                             </motion.div>
                             <motion.div whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -20 }} className="w-[19rem] h-[15rem] md:w-[24rem] md:h-[19rem] rounded-3xl border bg-neutral-950 border-gray-900">
                                 <motion.div className="border-l-4 border-blue-600 mt-4 md:mt-8 w-full h-[4rem]">
-                                    <motion.img whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -20 }} src="src/assets/rocket.png" className="ml-8 w-[4rem] h-[4rem]"/>
+                                    <motion.img whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -20 }} src="/rocket.png" alt="icone de um foguete" className="ml-8 w-[4rem] h-[4rem]"/>
                                 </motion.div>
                                 
                                 <motion.h1 whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -20 }} className="pl-8 mt-2 md:mt-14 text-start text-blue-600 font-extrabold text-3xl">

@@ -7,9 +7,7 @@ import {
 } from "framer-motion";
 import { useRef } from "react";
 
-
-
-const AnimatedCounter = ({from,to,animationOptions, classes}) => {
+const AnimatedCounter = ({from, to, animationOptions, classes}) => {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true });
 

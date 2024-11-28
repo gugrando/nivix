@@ -1,39 +1,23 @@
-import { animate, motion, useScroll, useTransform} from "framer-motion"
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
-const Case = ({logo}) => {
+const Case = ({ projectName, projectDescription, projectImage, projectMiniature }) => {
     return (
-        <motion.div className="flex flex-col p-10  border border-white/5 shadow-md shadow-white/30  backdrop-blur-lg w-[150vw] h-[680px] md:w-[90vw] md:h-[780px] rounded-3xl">
-            <motion.div className="flex items-center justify-start gap-8 w-full h-[6rem]  border-white/5 shadow-lg shadow-black rounded-lg backdrop-blur-lg">
-                <motion.img src={logo} alt="" className="bg-black w-[15rem] h-full ml-4" />
-                <motion.div className="w-full h-full  bg-black border border-white/5 shadow-lg shadow-black rounded-lg backdrop-blur-lg">
-                    ASSETS{/* Branding, UI/UX, Frontend... */}
-                </motion.div>  
+        <Link 
+            to="/caseInfo" 
+            state={{ projectName, projectDescription, projectImage }} // Passa as props via state
+        >
+            <motion.div
+                whileHover={{ scale: 1.05, transition: { duration: 0.25 } }}
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0, transition: { duration: 0.5 * Math.random() } }}
+                className="md:w-[25rem] md:h-[25rem] bg-gray-700 rounded-lg hover:cursor-pointer"
+            >
+                {/* Miniatura do case */}
+                <img src={projectMiniature} alt={projectName} className="w-full h-full object-cover rounded-lg hover:cursor-pointer" />
             </motion.div>
-
-            <motion.div className="flex gap-8 w-full h-[76%]">
-                <motion.div className="gap-4 flex mt-4 w-[100%] h-[100%] ">
-                    <motion.div className="flex-col w-[50%] h-[100%] bg-neutral-900">
-                        <motion.div src='' alt="" className="bg-black border border-white/5 shadow-lg shadow-black rounded-lg backdrop-blur-lg w-[100%] h-[60%]">
-                            IMAGEM DO PROJETO
-                            <img src="" alt="" />
-                        </motion.div>
-                        <motion.div className="w-full h-[40%] bg-black border border-white/5 shadow-lg shadow-black rounded-lg backdrop-blur-lg">
-                            STATS DO PROJETO
-                        </motion.div>
-                    </motion.div>
-                    <motion.div className="w-[50%] h-[100%] bg-black border border-white/5 shadow-lg shadow-black rounded-lg backdrop-blur-lg">
-                        ILUSTRAÇÕES DO PROJETO/MOCKUP
-                    </motion.div>
-                </motion.div>
-            </motion.div>
-                <motion.div className="flex flex-wrap w-full h-[12%] mt-9 gap-4 bg-black border border-white/5 shadow-lg shadow-black rounded-lg backdrop-blur-lg">
-                    <h1>TEMPO DE PROJETO</h1>
-                    <h1>DESCRICAO DO PROJETO</h1>
-                    <h1>DESCRICAO DO PROJETO</h1>
-                    <h1>DESCRICAO DO PROJETO</h1>
-                </motion.div>
-        </motion.div>
+        </Link>
     );
-}
- 
+};
+
 export default Case;

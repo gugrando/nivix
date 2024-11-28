@@ -18,8 +18,9 @@ a,  button:hover{
 
 body{
     /* background-color:#2561e7 ; */
-    background: linear-gradient(110deg, black 8%, #2561e7 100%);
+    /* background: linear-gradient(110deg, black 8%, #2561e7 100%); */
     /* background-color: black; */
+    background-color: #000B14;
     background-repeat: no-repeat;
     background-size: cover;
     /* height: 100vh; */
